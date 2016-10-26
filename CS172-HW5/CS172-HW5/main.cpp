@@ -29,9 +29,25 @@ int main()
 //EX05_03 – 12.8: Implement vector class
     
 //EX05_04 – 12.20: Shuffle vector
+    
 //EX05_05 – 12.25: new Account class
     
-    
+    Account A1;
+    A1.setName("Heid");
+    A1.setId(1234);
+    A1.setBalance(1000);
+    A1.setAnnualInterestRate(.5);
+    A1.deposit(90);
+    A1.deposit(45);
+    A1.deposit(60);
+    A1.withdraw(2);
+    A1.withdraw(70);
+    A1.withdraw(5);
+  
+    cout<<"Name: " << A1.getname()<<endl;
+    cout<<"Balance $"<<A1.getbalance()<<endl;
+    cout <<"Monthly Interest: $"<< A1.getMonthlyInterestRate()<<endl;
+    cout <<"Total balance: $"<<A1.getbalance()+A1.getMonthlyInterestRate()<<endl;
     
     
     

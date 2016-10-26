@@ -10,12 +10,33 @@
 #define Account_hpp
 
 #include <stdio.h>
-
+#include <string>
+using namespace std;
 class Account
 {
 public:
+    int id;
+    double balance;
+    double annualInterestRate;
+    string name;
     
-private:
+    
+    Account(int, double, double);
+    Account();
+    
+    string getname();
+    double getbalance();
+    double getannualInterestRate();
+    int getid();
+    
+    void setName(string);
+    void setBalance(double);
+    void setAnnualInterestRate(double);
+    void setId(int);
+    
+    int getMonthlyInterestRate();
+    void withdraw(int);
+    void deposit(int);
     
 };
 
