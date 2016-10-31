@@ -27,6 +27,43 @@ int main()
     
     
 //EX05_03 – 12.8: Implement vector class
+    Vector<int> vInt;
+    for(int i=0; i<10; i++)
+    {
+        vInt.pushBack(i+1);
+    }
+    cout<<"Numbers in the vector: ";
+    for(int i=0; i<vInt.size(); i++)
+    {
+        cout<<vInt[i]<<" ";
+    }
+    Vector<string> vString;
+    vString.pushBack("Dallas");
+    svString.pushBack("Houston");
+    vString.pushBack("Austin");
+    vStringpushack("Norman");
+    cout<<"\nStrings in the string vector: ";
+    for(int i=0; i< vString.size(); i++)
+    {
+        cout<<vString[i]<< " ";
+    }
+    vString.popBack();
+    Vector<string> v2;
+    v2.swap(vString);
+    v2[0]="Atlanta";
+    cout<<"Strings in the vector v2: ";
+    for(int i=0; i< v2.size(); i++)
+    {
+        cout<< v2.at(i)<< " ";
+    }
+    /*
+    Vector<int> vInt;
+    vInt.pushBack(10);
+    Vector<string> vString;
+    vString.pushBack("Hi");
+    cout <<" "<<endl;
+    */
+    
     
 //EX05_04 – 12.20: Shuffle vector
     
