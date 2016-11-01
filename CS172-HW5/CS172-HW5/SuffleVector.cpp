@@ -16,7 +16,7 @@ int myrandom (int i)
 
 
 template<typename D>
-void shuffle(vector<D>& v)
+void shuffle(Vector<D>& v)
 {
     
     srand(time(NULL));

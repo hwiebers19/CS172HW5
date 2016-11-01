@@ -12,7 +12,7 @@
 #include <stdio.h>
 int myrandom (int i);
 template<typename D>
-//void shuffle(vector<D>& v);
+//void shuffle(Vector<D>& v);
 void testShuffle();
 
 #endif /* SuffleVector_hpp */

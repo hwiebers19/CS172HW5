@@ -12,6 +12,15 @@
 #include "SuffleVector.hpp"
 #include "Account.hpp"
 #include <iostream>
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <cmath>
+#include <cctype>
+#include <iomanip>
+#include <string>
+#include <fstream>
+#include <vector>
 using namespace std;
 
 int main()
@@ -27,30 +36,30 @@ int main()
     
     
 //EX05_03 – 12.8: Implement vector class
-    Vector<int> vInt;
+    Vector<int> VInt;
     for(int i=0; i<10; i++)
     {
-        vInt.pushBack(i+1);
+        VInt.pushBack(i+1);
     }
     cout<<"Numbers in the vector: ";
-    for(int i=0; i<vInt.size(); i++)
+    for(int i=0; i<VInt.size(); i++)
     {
-        cout<<vInt[i]<<" ";
+        cout << VInt.at(i) << " ";
     }
-    Vector<string> vString;
-    vString.pushBack("Dallas");
-    svString.pushBack("Houston");
-    vString.pushBack("Austin");
-    vStringpushack("Norman");
+    Vector<string> VString;
+    VString.pushBack("Dallas");
+    VString.pushBack("Houston");
+    VString.pushBack("Austin");
+    VString.pushBack("Norman");
     cout<<"\nStrings in the string vector: ";
-    for(int i=0; i< vString.size(); i++)
+    for(int i=0; i< VString.size(); i++)
     {
-        cout<<vString[i]<< " ";
+        cout<<VString.at(i)<< " ";
     }
-    vString.popBack();
+    VString.popBack();
     Vector<string> v2;
-    v2.swap(vString);
-    v2[0]="Atlanta";
+    v2.swap(VString);
+    v2.pushBack("Atlanta");
     cout<<"Strings in the vector v2: ";
     for(int i=0; i< v2.size(); i++)
     {

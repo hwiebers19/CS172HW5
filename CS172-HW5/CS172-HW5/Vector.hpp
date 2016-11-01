@@ -10,6 +10,15 @@
 #define Vector_hpp
 
 #include <stdio.h>
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <cmath>
+#include <cctype>
+#include <iomanip>
+#include <string>
+#include <fstream>
+#include <vector>
 template<typename T>
 class Vector
 {
@@ -65,7 +74,7 @@ public:
     }
     unsigned size() const
     {
-        return size;
+        return mSize;
     }
     T at(int index) const
     {
@@ -77,7 +86,7 @@ public:
     }
     void clear()
     {
-        return mSize = 0;
+        mSize = 0;
     }
     void swap(Vector<T> v2)
     {
