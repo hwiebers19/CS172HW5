@@ -10,6 +10,7 @@
 #define LinearSearch_hpp
 
 #include <stdio.h>
+//creates the template to be used
 template <typename A>
 int linearSearch(const A list[], A key, int arraySize);
 void testSearch();

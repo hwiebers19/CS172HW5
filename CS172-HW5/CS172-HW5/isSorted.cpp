@@ -8,7 +8,7 @@
 #include <iostream>
 using namespace std;
 #include "isSorted.hpp"
-
+//creates a template to be used to see if it is sorted
 template<typename B>
 bool isSorted(const B list[], int size)
 {
@@ -30,7 +30,7 @@ bool isSorted(const B list[], int size)
 template<typename C>
 void testArray(const C list[], int size)
 {
-    //array are sorted
+    //tests to see if array is sorted
     for (int i=0; i< size; i++)
     {
         cout<< list[i]<<" ";
@@ -40,6 +40,8 @@ void testArray(const C list[], int size)
 
 void sortComplete()
 {
+    //checks if array is sorted for int
+    //array is not sorted so outputs that its not
     int list1[]={3,4,1,0,5,8,7};
     isSorted(list1, 7);
     testArray(list1, 7);
@@ -51,7 +53,8 @@ void sortComplete()
     {
         cout << "This list is not sorted" << endl;
     }
-    
+    //checks if array is sorted for doubles
+    //array is sorted so outputs that it is
     double list2[]={.3, 1.4, 1.6, 2.3, 2.7, 4.7};
     isSorted(list2, 6);
     testArray(list2, 6);
@@ -64,7 +67,8 @@ void sortComplete()
     {
         cout << "This list is not sorted" << endl;
     }
-    
+    //checks if array is sorted for strings
+    //array is not sorted so outputs that its not
     string list3[] = {"Heidi", "Megan", "Keaton", "Andrew"};
     isSorted(list3, 4);
     testArray(list3, 4);

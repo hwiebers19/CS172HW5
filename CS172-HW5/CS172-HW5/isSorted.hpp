@@ -10,6 +10,7 @@
 #define isSorted_hpp
 
 #include <stdio.h>
+//templates to see if they are sorted and tests the arrays
 template<typename B>
 bool isSorted(const B list[], int size);
 template<typename T>

@@ -18,6 +18,7 @@
 #include <iomanip>
 #include <string>
 #include <vector>
+//the template for the vector class
  template <typename T>
  class Vector
  {
@@ -37,18 +38,21 @@
          delete [] old;
      }
  public:
+     //initilizes
      Vector()
      {
          mCapacity = 8;
          mSize = 0;
          mElements = new T[mCapacity];
      }
+     //changes what they are sent to
      Vector(int size)
      {
          mCapacity = size;
          mSize = size;
          mElements = new T[mCapacity];
      }
+     //checks element in the array and sets them at defaltvalue
      Vector(int size, T defaultValue)
      {
          mCapacity = size;
@@ -59,6 +63,7 @@
              mElements[i] = defaultValue;
          }
      }
+     //appends the elemet in the vector
      void pushBack(T element)
      {
          if (mSize >= mCapacity)
@@ -68,30 +73,38 @@
          mElements[mSize] = element;
          mSize++;
      }
+     
+     //deletes last element from vector
      void popBack()
      {
         mSize--;
      }
- 
+     
+     //returns number of elements in the vector
      unsigned int size() const
      {
          return mSize;
      }
- 
+     
+     //returns the element at the location being asked
      T at(int index) const
      {
          return mElements[index];
      }
+     
+     //checks if vector is empty
      bool empty() const
      {
          return mSize == 0;
      }
  
+     //deletes everything from vector
      void clear()
      {
          mSize = 0;
      }
-
+     
+     //swaps the content
      void swap(Vector<T> v2)
      {
          clear();
