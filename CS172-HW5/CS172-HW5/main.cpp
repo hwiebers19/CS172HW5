@@ -36,48 +36,44 @@ int main()
     
     
 //EX05_03 – 12.8: Implement vector class
-    Vector<int> VInt;
+    
+    Vector<int> vInt;
     for(int i=0; i<10; i++)
     {
-        VInt.pushBack(i+1);
+        vInt.pushBack(i+1);
     }
     cout<<"Numbers in the vector: ";
-    for(int i=0; i<VInt.size(); i++)
+    for(int i=0; i<vInt.size(); i++)
     {
-        cout << VInt.at(i) << " ";
+        cout<<vInt.at(i)<<" ";
     }
-    Vector<string> VString;
-    VString.pushBack("Dallas");
-    VString.pushBack("Houston");
-    VString.pushBack("Austin");
-    VString.pushBack("Norman");
-    cout<<"\nStrings in the string vector: ";
-    for(int i=0; i< VString.size(); i++)
+    Vector<string> vString;
+    vString.pushBack("Dallas");
+    vString.pushBack("Houston");
+    vString.pushBack("Austin");
+    vString.pushBack("Norman");
+    cout <<" " <<endl;
+    cout<<"Strings in the string vector: "<<endl;
+    for(int i=0; i< vString.size(); i++)
     {
-        cout<<VString.at(i)<< " ";
+        cout<<vString.at(i)<< " ";
     }
-    VString.popBack();
+    cout <<" " <<endl;
+    vString.popBack();
     Vector<string> v2;
-    v2.swap(VString);
+    v2.swap(vString);
     v2.pushBack("Atlanta");
-    cout<<"Strings in the vector v2: ";
+    cout<<"Strings in the vector v2: "<<endl;
     for(int i=0; i< v2.size(); i++)
     {
         cout<< v2.at(i)<< " ";
     }
-    /*
-    Vector<int> vInt;
-    vInt.pushBack(10);
-    Vector<string> vString;
-    vString.pushBack("Hi");
-    cout <<" "<<endl;
-    */
     
-    
+    cout<<" "<<endl;
 //EX05_04 – 12.20: Shuffle vector
     
 //EX05_05 – 12.25: new Account class
-    
+    cout <<" "<<endl;
     Account A1;
     A1.setName("Heid");
     A1.setId(1234);
